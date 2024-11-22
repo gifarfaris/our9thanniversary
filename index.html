@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css ">
+    <title>9th Anniversary of Kika & Gifar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row greeting">
+        Happy 9th Anniversary💕
+      </div>
+      <div class="row openText" id="div3">
+        Please open,
+      </div>
+      <div class="row">
+        <div class="openedLetter" id="div2">
+          <p>
+            Nine years ago, we began this beautiful journey together, through every laugh, every challenge, and every quiet moment shared, my love for you has only grown deeper and deeper.  
+          </p>
+          <p>
+            You are my greatest blessing, my partner in every sense of the word, and the reason I look forward to tomorrow. 
+          </p>
+          <p>
+            These years have been filled with so much love, adventure, and growth, and I can’t wait to see what the future holds for us.
+          </p>
+          <p>
+            Thank you for being my source of happiness, my light, and my greatest joy. I love you more than words can ever express, and I’m so grateful to call you mine.
+          </p>
+          <p>
+            Here’s to many more years of love, laughter, and endless memories.
+          </p>
+          <p>
+            Forever and always,
+          </p>
+          <p class="signature">
+            🐢🐢
+          </p>
+          <p class="signature">
+            Gifar Faris
+          </p>
+        </div>
+        <div class="wrapper" id="div1">
+          <div class="lid one"></div>
+          <div class="lid two"></div>
+          <div class="envelope"></div>
+          <div class="letter" onclick="toggleDivs()">
+            <p>Dear Kika,</p>
+            <!-- <p>....</p> -->
+            <p>....</p>
+          </div>
+        </div>
+      </div>
+      <div class="row poem" id="div4">
+        <p>In your arms, I’ve found my place,</p>
+        <p>A love that time can’t ever chase.</p>
+      </div>
+    </div>
+    <script>
+      var div2 = document.getElementById('div2');
+      div2.style.display = 'none';  // Close div2
+      function toggleDivs() {
+        var div1 = document.getElementById('div1');
+        var div3 = document.getElementById('div3');
+        var div2 = document.getElementById('div2');
+        var div4 = document.getElementById('div4');
+        // Toggle visibility
+        if (div1.style.display === 'none') {
+          div1.style.display = 'block'; // Open div1
+          div3.style.display = 'block'; 
+          div4.style.display = 'block';
+          div2.style.display = 'none';  // Close div2
+        } else {
+          div1.style.display = 'none';  // Close div1
+          div3.style.display = 'none'; 
+          div2.style.display = 'block'; // Open div2
+          div4.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
